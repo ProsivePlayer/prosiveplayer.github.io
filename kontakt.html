@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kontakt | Lichtmoos Games</title>
+        <meta name="description" content="So erreichen Sie Lichtmoos Games: Kontaktdaten und Kontaktformular." />
+        <meta name="theme-color" content="#0f2a24" />
+        <link rel="icon" type="image/svg+xml" href="assets/bildmarke-lichtmoos.svg" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+        <p id="live-status" class="sr-only" role="status"></p>
+
+        <section id="cookie-banner" class="cookie" aria-labelledby="cookie-titel" tabindex="-1" hidden>
+            <div class="wrap">
+                <p id="cookie-titel" class="cookie-titel"><strong>Cookies und Browser-Speicher</strong></p>
+                <p>Wir speichern nur, was für den Betrieb nötig ist. Statistik läuft nur mit Ihrer Einwilligung.</p>
+                <ul>
+                    <li>
+                        Notwendig, immer aktiv: <code>gl_consent</code> merkt sich Ihre Auswahl (6 Monate). <code>gl_cart</code> merkt sich Ihren Warenkorb (bis
+                        zum Ende der Browser-Sitzung).
+                    </li>
+                    <li>
+                        Statistik, nur mit Einwilligung: Matomo (selbst gehostet) setzt <code>_pk_id</code> (13 Monate) und <code>_pk_ses</code> (30 Minuten),
+                        um anonymisiert zu messen, welche Seiten genutzt werden.
+                    </li>
+                </ul>
+                <div class="btn-row" style="margin-top: 0.6rem">
+                    <button type="button" class="btn zweit" data-consent="notwendig">Nur notwendige</button>
+                    <button type="button" class="btn zweit" data-consent="alle">Alle akzeptieren</button>
+                    <a class="btn rand" href="datenschutz.html#cookies">Details in der Datenschutzerklärung</a>
+                </div>
+            </div>
+        </section>
+
+        <header class="site-header">
+            <div class="wrap">
+                <a class="brand" href="index.html"><img src="assets/bildmarke-lichtmoos.svg" width="44" height="44" alt="" />Lichtmoos Games</a>
+                <nav class="nav" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="index.html">Spiel</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="lizenz.html">Lizenz</a></li>
+                        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+                        <li><a href="kasse.html">Kasse</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="inhalt">
+            <div class="legal">
+                <div class="wrap">
+                    <h1>Kontakt</h1>
+                    <p>
+                        Fragen zum Spiel, zur Bestellung oder zu dieser Website? Schreiben Sie uns oder rufen Sie an. Wir antworten werktags in der Regel
+                        innerhalb von zwei Arbeitstagen.
+                    </p>
+
+                    <h2 id="daten">So erreichen Sie uns</h2>
+                    <dl class="kv">
+                        <dt>Allgemein</dt>
+                        <dd><a href="mailto:office@lichtmoos-games.example">office@lichtmoos-games.example</a></dd>
+                        <dt>Support zum Spiel</dt>
+                        <dd><a href="mailto:support@lichtmoos-games.example">support@lichtmoos-games.example</a></dd>
+                        <dt>Datenschutz</dt>
+                        <dd><a href="mailto:datenschutz@lichtmoos-games.example">datenschutz@lichtmoos-games.example</a></dd>
+                        <dt>Barrierefreiheit</dt>
+                        <dd><a href="mailto:barrierefreiheit@lichtmoos-games.example">barrierefreiheit@lichtmoos-games.example</a></dd>
+                        <dt>Telefon</dt>
+                        <dd>+43 1 234 56 78, Montag bis Freitag, 9 bis 16 Uhr</dd>
+                        <dt>Anschrift</dt>
+                        <dd>Lichtmoos Games GmbH, Moosweg 12/4, 1070 Wien</dd>
+                    </dl>
+
+                    <h2 id="formular">Kontaktformular</h2>
+                    <p>Felder mit Stern sind Pflichtfelder.</p>
+                    <form data-mock data-ergebnis="gesendet" aria-labelledby="formular">
+                        <div class="feld">
+                            <label for="k-name">Name *</label>
+                            <input type="text" id="k-name" name="name" autocomplete="name" required />
+                        </div>
+                        <div class="feld">
+                            <label for="k-mail">E-Mail-Adresse * <span class="hint">Hier antworten wir Ihnen.</span></label>
+                            <input type="email" id="k-mail" name="email" autocomplete="email" required />
+                        </div>
+                        <div class="feld">
+                            <label for="k-thema">Thema *</label>
+                            <select id="k-thema" name="thema" required>
+                                <option value="">Bitte wählen</option>
+                                <option>Frage zum Spiel</option>
+                                <option>Technisches Problem</option>
+                                <option>Bestellung und Rechnung</option>
+                                <option>Datenschutz</option>
+                                <option>Rückmeldung zur Barrierefreiheit</option>
+                            </select>
+                        </div>
+                        <div class="feld">
+                            <label for="k-text">Ihre Nachricht *</label>
+                            <textarea id="k-text" name="nachricht" required></textarea>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" id="k-dsgvo" name="datenschutz" required />
+                            <label for="k-dsgvo"
+                                >Ich habe die <a href="datenschutz.html#kontaktformular">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine
+                                Angaben zur Beantwortung meiner Anfrage verarbeitet werden. *</label
+                            >
+                        </div>
+                        <button type="submit" class="btn">Nachricht senden</button>
+                    </form>
+                    <div id="gesendet" class="status" hidden>
+                        <h2>Nachricht abgeschickt (Demo)</h2>
+                        <p>
+                            Vielen Dank. In dieser Demo wird nichts gesendet oder gespeichert. Im Echtbetrieb würden wir Ihnen innerhalb von zwei Arbeitstagen
+                            antworten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="foot-grid">
+                    <div>
+                        <h2>Lichtmoos Games GmbH</h2>
+                        <p>Moosweg 12/4, 1070 Wien, Österreich</p>
+                        <p>Wir entwickeln ruhige, gewaltfreie Spiele in Wien.</p>
+                    </div>
+                    <nav aria-label="Rechtliches und Service">
+                        <h2>Rechtliches und Service</h2>
+                        <ul>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+                            <li><a href="lizenz.html">Lizenzbedingungen</a></li>
+                            <li><a href="medien.html">Medien und Quellen</a></li>
+                            <li><a href="ueber-uns.html">Über uns und Marken</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><button type="button" id="cookie-settings" class="link">Cookie-Einstellungen</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="copy">
+                    © 2026 Lichtmoos Games GmbH. Alle Grafiken, Klänge und Texte dieser Website sind Eigenproduktionen; die Nachweise stehen unter „Medien und
+                    Quellen“. Demo-Projekt: Unternehmen, Personen und Angaben sind für eine Lehrveranstaltung frei erfunden, es findet kein echter Verkauf
+                    statt.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

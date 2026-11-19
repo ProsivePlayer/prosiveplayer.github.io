@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kasse (Demo) | Lichtmoos Games</title>
+        <meta name="description" content="Demo-Kasse für Nebelkrähe: Bestellung mit Zustimmung zur sofortigen Bereitstellung des Downloads." />
+        <meta name="theme-color" content="#0f2a24" />
+        <link rel="icon" type="image/svg+xml" href="assets/bildmarke-lichtmoos.svg" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+        <p id="live-status" class="sr-only" role="status"></p>
+
+        <section id="cookie-banner" class="cookie" aria-labelledby="cookie-titel" tabindex="-1" hidden>
+            <div class="wrap">
+                <p id="cookie-titel" class="cookie-titel"><strong>Cookies und Browser-Speicher</strong></p>
+                <p>Wir speichern nur, was für den Betrieb nötig ist. Statistik läuft nur mit Ihrer Einwilligung.</p>
+                <ul>
+                    <li>
+                        Notwendig, immer aktiv: <code>gl_consent</code> merkt sich Ihre Auswahl (6 Monate). <code>gl_cart</code> merkt sich Ihren Warenkorb (bis
+                        zum Ende der Browser-Sitzung).
+                    </li>
+                    <li>
+                        Statistik, nur mit Einwilligung: Matomo (selbst gehostet) setzt <code>_pk_id</code> (13 Monate) und <code>_pk_ses</code> (30 Minuten),
+                        um anonymisiert zu messen, welche Seiten genutzt werden.
+                    </li>
+                </ul>
+                <div class="btn-row" style="margin-top: 0.6rem">
+                    <button type="button" class="btn zweit" data-consent="notwendig">Nur notwendige</button>
+                    <button type="button" class="btn zweit" data-consent="alle">Alle akzeptieren</button>
+                    <a class="btn rand" href="datenschutz.html#cookies">Details in der Datenschutzerklärung</a>
+                </div>
+            </div>
+        </section>
+
+        <header class="site-header">
+            <div class="wrap">
+                <a class="brand" href="index.html"><img src="assets/bildmarke-lichtmoos.svg" width="44" height="44" alt="" />Lichtmoos Games</a>
+                <nav class="nav" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="index.html">Spiel</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="lizenz.html">Lizenz</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kasse.html" aria-current="page">Kasse</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="inhalt">
+            <div class="legal">
+                <div class="wrap">
+                    <h1>Kasse</h1>
+                    <div class="note"><p>Demo: Hier wird nichts bezahlt, gesendet oder gespeichert. Bitte geben Sie keine echten Zahlungsdaten ein.</p></div>
+
+                    <div id="bestellung">
+                        <h2 id="uebersicht">Ihre Bestellung</h2>
+                        <div class="scroll" role="region" aria-labelledby="cap-best" tabindex="0">
+                            <table>
+                                <caption id="cap-best">
+                                    Warenkorb
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produkt</th>
+                                        <th scope="col">Menge</th>
+                                        <th scope="col">Preis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nebelkrähe, Download und persönliche Lizenz</th>
+                                        <td>1</td>
+                                        <td>19,99 €</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2">Gesamtsumme inklusive 20 % USt. (3,33 €)</th>
+                                        <td>19,99 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="stand">Der Steuersatz richtet sich nach Ihrem Wohnsitzland. Es fällt kein Abo und keine weitere Zahlung an.</p>
+
+                        <form data-mock data-ergebnis="fertig" aria-labelledby="angaben">
+                            <h2 id="angaben">Ihre Angaben</h2>
+                            <p>Felder mit Stern sind Pflichtfelder.</p>
+                            <div class="feld">
+                                <label for="c-vor">Vorname *</label>
+                                <input type="text" id="c-vor" name="vorname" autocomplete="given-name" required />
+                            </div>
+                            <div class="feld">
+                                <label for="c-nach">Nachname *</label>
+                                <input type="text" id="c-nach" name="nachname" autocomplete="family-name" required />
+                            </div>
+                            <div class="feld">
+                                <label for="c-mail"
+                                    >E-Mail-Adresse * <span class="hint">Hierhin senden wir Lizenzschlüssel und Vertragsbestätigung.</span></label
+                                >
+                                <input type="email" id="c-mail" name="email" autocomplete="email" required />
+                            </div>
+                            <div class="feld">
+                                <label for="c-land">Land *</label>
+                                <select id="c-land" name="land" autocomplete="country-name" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option>Österreich</option>
+                                    <option>Deutschland</option>
+                                    <option>Schweiz</option>
+                                    <option>Anderes EU-Land</option>
+                                </select>
+                            </div>
+
+                            <fieldset>
+                                <legend>Zahlungsart *</legend>
+                                <div class="opt">
+                                    <input type="radio" id="z-karte" name="zahlung" value="karte" required /><label for="z-karte"
+                                        >Kreditkarte (simuliert)</label
+                                    >
+                                </div>
+                                <div class="opt">
+                                    <input type="radio" id="z-sepa" name="zahlung" value="sepa" /><label for="z-sepa">SEPA-Lastschrift (simuliert)</label>
+                                </div>
+                                <div class="opt">
+                                    <input type="radio" id="z-eps" name="zahlung" value="eps" /><label for="z-eps">eps-Überweisung (simuliert)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Zustimmungen</legend>
+                                <div class="opt">
+                                    <input type="checkbox" id="c-lizenz" name="lizenz" required />
+                                    <label for="c-lizenz"
+                                        >Ich habe die <a href="lizenz.html">Lizenzbedingungen</a> und die
+                                        <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere die Lizenzbedingungen. *</label
+                                    >
+                                </div>
+                                <div class="opt">
+                                    <input type="checkbox" id="c-sofort" name="sofort" required />
+                                    <label for="c-sofort"
+                                        >Ich verlange ausdrücklich, dass die Lichtmoos Games GmbH vor Ablauf der Rücktrittsfrist mit der Bereitstellung des
+                                        Downloads beginnt. Mir ist bekannt, dass ich mein Rücktrittsrecht verliere, sobald der Download beginnt. *</label
+                                    >
+                                </div>
+                            </fieldset>
+
+                            <p class="stand">
+                                Nach Vertragsschluss erhalten Sie die Bestätigung mit diesen Angaben per E-Mail auf einem dauerhaften Datenträger.
+                            </p>
+                            <button type="submit" class="btn">Zahlungspflichtig bestellen</button>
+                        </form>
+                    </div>
+
+                    <div id="fertig" class="status" hidden>
+                        <h2>Bestellung abgeschlossen (Demo)</h2>
+                        <p>Vielen Dank! So würde Ihre Lizenz aussehen:</p>
+                        <p class="schluessel" data-key>NK-XXXX-XXXX-XXXX</p>
+                        <p>In dieser Demo wurde nichts bestellt, bezahlt oder gespeichert. Der Schlüssel ist zufällig erzeugt und ohne Funktion.</p>
+                        <p><a href="index.html">Zurück zur Startseite</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="foot-grid">
+                    <div>
+                        <h2>Lichtmoos Games GmbH</h2>
+                        <p>Moosweg 12/4, 1070 Wien, Österreich</p>
+                        <p>Wir entwickeln ruhige, gewaltfreie Spiele in Wien.</p>
+                    </div>
+                    <nav aria-label="Rechtliches und Service">
+                        <h2>Rechtliches und Service</h2>
+                        <ul>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+                            <li><a href="lizenz.html">Lizenzbedingungen</a></li>
+                            <li><a href="medien.html">Medien und Quellen</a></li>
+                            <li><a href="ueber-uns.html">Über uns und Marken</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><button type="button" id="cookie-settings" class="link">Cookie-Einstellungen</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="copy">
+                    © 2026 Lichtmoos Games GmbH. Alle Grafiken, Klänge und Texte dieser Website sind Eigenproduktionen; die Nachweise stehen unter „Medien und
+                    Quellen“. Demo-Projekt: Unternehmen, Personen und Angaben sind für eine Lehrveranstaltung frei erfunden, es findet kein echter Verkauf
+                    statt.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

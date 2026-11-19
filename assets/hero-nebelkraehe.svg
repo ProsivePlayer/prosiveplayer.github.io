@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+<title>Nebelkrähe: Krähe mit Laterne auf einem Ast vor Mond und Nebelwald</title>
+<metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>Lichtmoos Games GmbH</dc:creator><dc:rights>© 2026 Lichtmoos Games GmbH. Alle Rechte vorbehalten.</dc:rights></rdf:Description></rdf:RDF></metadata>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241a45"/><stop offset=".6" stop-color="#4a3a7a"/><stop offset="1" stop-color="#8b6fa8"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffb43c" stop-opacity=".85"/><stop offset="1" stop-color="#ffb43c" stop-opacity="0"/></radialGradient>
+<radialGradient id="mg"><stop offset="0" stop-color="#f6e7b4" stop-opacity=".55"/><stop offset="1" stop-color="#f6e7b4" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7ecea" stop-opacity="0"/><stop offset=".5" stop-color="#e7ecea" stop-opacity=".28"/><stop offset="1" stop-color="#e7ecea" stop-opacity="0"/></linearGradient>
+<g id="pine"><path d="M0 -64 L17 -28 H9 L24 0 H-24 L-9 -28 H-17 Z"/><rect x="-3" y="0" width="6" height="12"/></g>
+</defs>
+<rect width="800" height="520" fill="url(#sky)"/>
+<g fill="#f6e7b4"><circle cx="70" cy="60" r="2"/><circle cx="150" cy="130" r="1.6"/><circle cx="260" cy="48" r="2.2"/><circle cx="330" cy="150" r="1.5"/><circle cx="420" cy="70" r="1.8"/><circle cx="500" cy="170" r="1.5"/><circle cx="720" cy="230" r="2"/><circle cx="770" cy="70" r="1.6"/><circle cx="40" cy="200" r="1.6"/><circle cx="380" cy="215" r="1.4"/></g>
+<circle cx="610" cy="125" r="160" fill="url(#mg)"/>
+<circle cx="610" cy="125" r="58" fill="#f6e7b4"/>
+<g fill="#e6d392"><circle cx="592" cy="110" r="9"/><circle cx="628" cy="140" r="12"/><circle cx="624" cy="98" r="5"/></g>
+<path d="M0 345 C120 295 220 335 330 305 C450 275 560 335 800 295 V520 H0 Z" fill="#3a3f6e"/>
+<path d="M0 405 C140 355 260 415 400 375 C540 335 660 405 800 365 V520 H0 Z" fill="#1f3b4a"/>
+<g fill="#1f3b4a"><use href="#pine" transform="translate(60 385) scale(1.1)"/><use href="#pine" transform="translate(130 372) scale(.8)"/><use href="#pine" transform="translate(690 372) scale(1.2)"/><use href="#pine" transform="translate(760 368) scale(.9)"/><use href="#pine" transform="translate(470 360) scale(.7)"/></g>
+<rect x="0" y="360" width="800" height="90" fill="url(#fog)"/>
+<path d="M0 468 C150 428 300 478 450 448 C600 418 700 468 800 448 V520 H0 Z" fill="#0f2a24"/>
+<g fill="#0f2a24"><use href="#pine" transform="translate(40 470) scale(1.5)"/><use href="#pine" transform="translate(120 480) scale(1.1)"/><use href="#pine" transform="translate(640 462) scale(1.6)"/><use href="#pine" transform="translate(735 470) scale(1.2)"/></g>
+<path d="M-10 305 C80 293 160 308 290 282" fill="none" stroke="#0b1d19" stroke-width="10" stroke-linecap="round"/>
+<path d="M120 300 L100 280 M200 296 L190 320" stroke="#0b1d19" stroke-width="5" stroke-linecap="round"/>
+<g fill="#0b1d19" stroke="#0b1d19">
+<ellipse cx="185" cy="270" rx="31" ry="17" transform="rotate(-14 185 270)" stroke="none"/>
+<circle cx="219" cy="253" r="12" stroke="none"/>
+<path d="M229 249 L252 256 L230 259 Z" stroke="none"/>
+<path d="M160 275 L112 291 L166 287 Z" stroke="none"/>
+<path d="M180 286 V298 M192 286 V298" stroke-width="3" fill="none"/>
+</g>
+<circle cx="223" cy="251" r="2.4" fill="#ffb43c"/>
+<path d="M262 284 V304" stroke="#0b1d19" stroke-width="2"/>
+<circle cx="262" cy="324" r="70" fill="url(#glow)"/>
+<path d="M254 304 H270 L274 310 H250 Z" fill="#0b1d19"/>
+<rect x="252" y="310" width="20" height="28" rx="3" fill="#ffb43c" stroke="#0b1d19" stroke-width="3"/>
+<g fill="#ffb43c"><circle cx="330" cy="360" r="3" opacity=".9"/><circle cx="395" cy="330" r="2.4" opacity=".8"/><circle cx="450" cy="395" r="3" opacity=".7"/><circle cx="520" cy="345" r="2.2" opacity=".8"/><circle cx="560" cy="410" r="2.6" opacity=".6"/><circle cx="300" cy="410" r="2" opacity=".7"/></g>
+</svg>

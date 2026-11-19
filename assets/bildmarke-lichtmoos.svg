@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>Bildmarke Lichtmoos: Laterne mit Blatt als Flamme</title>
+<metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>Lichtmoos Games GmbH</dc:creator><dc:rights>© 2026 Lichtmoos Games GmbH. Alle Rechte vorbehalten.</dc:rights></rdf:Description></rdf:RDF></metadata>
+<circle cx="60" cy="60" r="58" fill="#ffb43c"/>
+<path d="M47 33 C47 15 73 15 73 33" fill="none" stroke="#0f2a24" stroke-width="5" stroke-linecap="round"/>
+<path d="M44 33 H76 L84 43 H36 Z" fill="#0f2a24"/>
+<rect x="40" y="43" width="40" height="43" rx="5" fill="#fff3d0" stroke="#0f2a24" stroke-width="5"/>
+<path d="M60 50 C73 60 73 76 60 83 C47 76 47 60 60 50 Z" fill="#2f7a4a"/>
+<path d="M60 56 V78" stroke="#fff3d0" stroke-width="2" stroke-linecap="round"/>
+<rect x="35" y="86" width="50" height="9" rx="3" fill="#0f2a24"/>
+</svg>
